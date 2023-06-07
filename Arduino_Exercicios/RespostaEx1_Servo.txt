@@ -1,0 +1,25 @@
+Explique como funcionam os métodos attach(), write() e read() da biblioteca servo.h
+
+attach()
+    Tem e funcao de anexar um servo a um pino do arduino
+    
+    Sintaxes:
+        servo.attach(pin) 
+        servo.attach(pin, min, max)
+
+        o min e max, são largura do pulso em ms oq correponde aos angulos min e max
+        por default esses valores são, respectivamente, 544, 2400
+
+write()
+    Grava um valor em graus no servo mais também serve como velocidade de rotação
+    se for 0 é velocidade máxima para um lado se for 180 é velocidad maxima para outro
+    e se for 90 o servo não realiza movimento
+
+    Sintaxe:
+        servo.write(angle)
+
+read()
+    le o atual valor de angulo no servo, ou seja, o ultimo que o write mandou
+
+    Sintaxe:
+        servo.read()
