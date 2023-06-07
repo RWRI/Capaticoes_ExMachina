@@ -1,6 +1,6 @@
 # Ex Machina - Capacitação Arduíno
 
-Este repositório tem como objetivo organizar os exercícios propotos na capacitação de Arduíno. Vale ressaltar que o enunciado do exercícios pode ser encontrado no arquivo "Exercicios_Propostos.pdf" e que a resolução dos códigos assim como respostas estão presentes neste repositório.
+Este diretório tem como objetivo organizar os exercícios propotos na capacitação de Arduíno. Vale ressaltar que o enunciado do exercícios pode ser encontrado no arquivo "Exercicios_Propostos.pdf" e que a resolução dos códigos assim como respostas estão presentes neste diretório.
 
 Já os circuitos solicitados podem ser acessados abaixo:
 
