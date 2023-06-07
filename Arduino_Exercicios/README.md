@@ -1,8 +1,8 @@
-# Ex Machina - Capacitação Arduíno
+# Capacitação Arduíno
 
-Este diretório tem como objetivo organizar os exercícios propotos na capacitação de Arduíno. Vale ressaltar que o enunciado do exercícios pode ser encontrado no arquivo "Exercicios_Propostos.pdf" e que a resolução dos códigos assim como respostas estão presentes neste diretório.
+Este diretório tem como objetivo organizar a entrega dos exercícios da capacitação. Vale ressaltar que o enunciado do exercícios pode ser encontrado no arquivo "Exercicios_Propostos.pdf" e que a resolução dos códigos assim como respostas estão presentes neste diretório.
 
-Já os circuitos solicitados podem ser acessados abaixo:
+Já os circuitos solicitados podem ser acessados pelos links abaixo:
 
 * [Exercício 1a](https://www.tinkercad.com/things/g4RBkkITUBA?sharecode=7VQlWCBQQLNZ0Iba5MW05IMyuPuQ6rR2fDEUULclEDg)
 * [Exercício 1b](https://www.tinkercad.com/things/cCjxca7Rvtz?sharecode=_KbeYSYQVuYsGeCMxQ4QsDYnfSEy8ek9j4OaP6lP3mA)
