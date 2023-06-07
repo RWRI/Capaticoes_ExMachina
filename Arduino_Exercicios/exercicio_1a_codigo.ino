@@ -9,25 +9,16 @@ void setup(){
 }
 
 void loop(){
-  //acendendo led azul
   digitalWrite(LED_AZUL, HIGH);
-  //mantendo aceso por 1 s
   delay(1000);
-  //apagando led azul
   digitalWrite(LED_AZUL, LOW);
-  
-  //acendendo led verde
+ 
   digitalWrite(LED_VERDE, HIGH);
-  //mantendo aceso por 1 s
   delay(1000);
-  //apagando led verde
   digitalWrite(LED_VERDE, LOW);
   
-  //acendendo led vermelho
   digitalWrite(LED_VERM, HIGH);
-  //mantendo aceso por 1 s
   delay(1000);
-  //apagando led vermelho
   digitalWrite(LED_VERM, LOW);
 
 }

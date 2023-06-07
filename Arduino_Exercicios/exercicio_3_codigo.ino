@@ -2,39 +2,39 @@
 
 #define SERVO 10
 
-Servo serv;
+Servo servo;
 
 void setup()
 {
   Serial.begin(9600);  
-  serv.attach(SERVO);
-  serv.write(180);
+  servo.attach(SERVO);
+  servo.write(180);
 }
 
 void loop()
 { 
   if(Serial.available()){
-  	String s;
-    int vs;
+  	String input;
+    int valorServo;
     
-  	s = Serial.readString();
-  	Serial.println(s);
-    vs = serv.read();
+  	input = Serial.readString();
+  	Serial.println(input);
+    valorServo = servo.read();
     
-    if(s == "ant")
+    if(input == "ant")
       for(int i = 1; i <= 180;i++){
-         if(vs+i > 180) break;
-         serv.write(vs+i);
+         if(valorServo+i > 180) break;
+         servo.write(valorServo+i);
          delay(100);
       }
-    else if(s == "hor")
+    else if(input == "hor")
       for(int i = 1; i <= 180;i++){
-      	 if(vs-i < 0) break;
-         serv.write(vs-i);
+      	 if(valorServo-i < 0) break;
+         servo.write(valorServo-i);
          delay(100);
       }
     else
-      serv.write(90);  
+      servo.write(90);  
   }
                    
 }

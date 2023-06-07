@@ -6,23 +6,23 @@
 #define SERVO4 6
 #define SERVO5 5
 
-Servo serv[5];
+Servo servos[5];
 
 void setValues(int s1, int s2, int s3, int s4, int s5){
-  serv[0].write(s1);
-  serv[1].write(s2);
-  serv[2].write(s3);
-  serv[3].write(s4);
-  serv[4].write(s5);
+  servos[0].write(s1);
+  servos[1].write(s2);
+  servos[2].write(s3);
+  servos[3].write(s4);
+  servos[4].write(s5);
 }
 
 void setup()
 {   
-  serv[0].attach(SERVO1);
-  serv[1].attach(SERVO2);
-  serv[2].attach(SERVO3);
-  serv[3].attach(SERVO4);
-  serv[4].attach(SERVO5);
+  servos[0].attach(SERVO1);
+  servos[1].attach(SERVO2);
+  servos[2].attach(SERVO3);
+  servos[3].attach(SERVO4);
+  servos[4].attach(SERVO5);
 }
 
 void loop()
