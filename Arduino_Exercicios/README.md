@@ -10,3 +10,4 @@ Já os circuitos solicitados podem ser acessados pelos links abaixo:
 * [Exercício 3](https://www.tinkercad.com/things/9erCNzvh6Jn?sharecode=Oa_weG5aZeEUL1AnasI3BAAjFD650USbsQZamM3V9yc)
 * [Exercício 4](https://www.tinkercad.com/things/dnS8cyo8Bvc?sharecode=yg5cf50QLatJCWjqKzLFZZuqFBsfh49h7pWLOK8mCOU)
 * [Exercício 5](https://www.tinkercad.com/things/3pSDy2vDLKd?sharecode=aHH_NDymnBBKEGdJlWVG4af7B8dS90jveDpAGWrBvyQ)
+* [Exercício Extra](https://www.tinkercad.com/things/5XyDY7KSTZU?sharecode=PhFy-Y4li5nMDnWTINAwWzuhhVoSX6ZYs6E2bJ4ftUg)
