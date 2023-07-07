@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding-left: 3em;
+    height: 15vh;
+}
+
+header i{
+    font-size: 2em;
+    margin: 0.2em;
+}
+
+header h1{
+    font-size: 1.8em;
+}
