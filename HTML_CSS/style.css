@@ -20,3 +20,129 @@ header i{
 header h1{
     font-size: 1.8em;
 }
+
+#container{
+    display:flex;
+    background: linear-gradient(to bottom, #2b2929, #000000);
+    min-height: 85vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    margin-top: 2%;
+    margin-left: 20%;
+    min-width: 60%;
+    border-radius: 7px;
+}
+
+main h2{
+    font-weight: bold;
+    font-size: 2.8em;
+    margin-top: 2em;
+}
+
+#optionsLoginExternal{
+    padding: 2em;
+}
+
+.btnLogin{
+    display: flex;
+    padding: 1em;
+    border: rgba(255,255,255,0.5) 1px solid;
+    border-radius: 25px;
+    margin: 0.5em;
+}
+
+.btnLogin:hover{
+    border: rgb(255,255,255) 1.3px solid;
+}
+
+
+.btnLogin i{
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.btnLogin p {
+    text-align: center;
+    font-weight: 500;
+}
+
+#loginInternal{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-top: rgba(255,255,255,0.5) 1px solid;
+    border-bottom: rgba(255,255,255,0.5) 1px solid;
+    width: 80%;
+}
+
+#loginInternal form{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-top: 5%;
+    margin-left: 10%;
+}
+
+#loginInternal label{
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+#loginInternal .boxText{
+    background-color: #000;
+    border: rgba(255,255,255,0.5) 1px solid;
+    border-radius: 3px;
+    font-size: 0.9em;
+    padding: 0.7em;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}
+
+#loginInternal .boxText:hover{
+    border: rgb(255,255,255) 1.3px solid;
+
+}
+
+#checkBox{
+    accent-color: #1ed760;
+    size: 2em;
+    border: #fff 2px solid;
+    
+}
+
+#loginInternal .btn{
+    margin: 2em;
+    padding: 1em;
+    font-weight: bold;
+    background-color: #1ed760;
+    border: none;
+    border-radius: 25px;
+}
+
+#loginInternal a{
+    margin-bottom: 5%;
+    align-self: center;
+    color: #fff;
+    font-weight: 600;
+}
+
+#sigUp{
+    margin-top: 2em;
+    margin-bottom: 5em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#sigUp a{
+    color: #fff;
+    padding-left: 8px;
+}
+
