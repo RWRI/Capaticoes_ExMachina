@@ -128,6 +128,12 @@ main h2{
     border-radius: 25px;
 }
 
+#loginInternal .btn:hover{
+    padding: 1.2em;
+    margin: 1.5em;
+    font-size: 0.9em;
+}
+
 #loginInternal a{
     margin-bottom: 5%;
     align-self: center;
