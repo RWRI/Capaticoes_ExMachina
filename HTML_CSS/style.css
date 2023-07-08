@@ -23,6 +23,7 @@ header h1{
 
 #container{
     display:flex;
+    justify-content: center;
     background: linear-gradient(to bottom, #2b2929, #000000);
     min-height: 85vh;
 }
@@ -34,9 +35,8 @@ main {
     align-items: center;
     background-color: #000;
     color: #fff;
-    margin-top: 2%;
-    margin-left: 20%;
-    min-width: 60%;
+    margin-top: 3%;
+    width: 70%;
     border-radius: 7px;
 }
 
@@ -44,6 +44,7 @@ main h2{
     font-weight: bold;
     font-size: 2.8em;
     margin-top: 2em;
+    text-align: center;
 }
 
 #optionsLoginExternal{
@@ -52,6 +53,7 @@ main h2{
 
 .btnLogin{
     display: flex;
+    align-items: center;
     padding: 1em;
     border: rgba(255,255,255,0.5) 1px solid;
     border-radius: 25px;
