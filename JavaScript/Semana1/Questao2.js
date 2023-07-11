@@ -8,10 +8,11 @@ function quadrado(lado){
     console.log("Perimetro:"+(4*lado))
 }
 
-function triangulo(base, altura){
+function triangulo(lado1, lado2, lado3){
     console.log("\nTriângulo:");
-    console.log("Area:"+(base*altura/2));
-    console.log("Perimetro:"+(Math.sqrt(base*base+altura*altura)*2+base));
+    s = (lado1+lado2+lado3)/2;
+    console.log("Area:"+(Math.sqrt(s*(s-lado1)*(s-lado2)*(s-lado3))));
+    console.log("Perimetro:"+(s*2));
 }
 
 function circunferencia(raio){
@@ -20,11 +21,11 @@ function circunferencia(raio){
     console.log("Perimetro:"+(2*Math.PI*raio))
 }
 
-const formaGeometrica = (n) => {
-    switch(n){
+const formaGeometrica = (escolha) => {
+    switch(escolha){
         case 1: quadrado(2); break;
-        case 2: triangulo(2,3); break;
-        case 3: circunferencia(4); break;
+        case 2: triangulo(3,4,5); break;
+        case 3: circunferencia(6); break;
         default: quadrado(1); break;
     }
 }
