@@ -15,6 +15,7 @@ header{
 header i{
     font-size: 2em;
     margin: 0.2em;
+    color: #1ed760;
 }
 
 header h1{
@@ -49,6 +50,13 @@ main h2{
 
 #optionsLoginExternal{
     padding: 2em;
+}
+
+#facebook{
+    color: #1877f2;
+    background-color: #fff;
+    display: flex;
+    border-radius: 50%;
 }
 
 .btnLogin{
@@ -99,6 +107,7 @@ main h2{
 
 #loginInternal .boxText{
     background-color: #000;
+    color: #fff;
     border: rgba(255,255,255,0.5) 1px solid;
     border-radius: 3px;
     font-size: 0.9em;
