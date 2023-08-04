@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Comfortaa', cursive;
 }
 
 body {
@@ -10,7 +11,7 @@ body {
   display: flex;
 }
 
-.about{
+.about {
   background-color: #fff;
   width: 40%;
   display: flex;
@@ -19,32 +20,33 @@ body {
   justify-content: space-evenly;
 }
 
-.about h2{
+.about h2 {
   color: #478ece;
   font-size: 3em;
   text-align: center;
 }
 
-.about img{
+.about img {
   padding: 1em;
   width: 90%;
 }
 
-.about p{
-  color: #8f8f8f;
+.about p {
+  color: #696969;
   font-style: italic;
+  font-size: 0.8em;
 }
 
-.memory-game{
+.memory-game {
   width: 60%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   padding: 4em 1.5em;
-  
+
 }
 
-.memory-card{
+.memory-card {
   width: 20%;
   background-color: #478ece;
   margin: 0.5em;
@@ -53,6 +55,6 @@ body {
   justify-content: center;
 }
 
-.front-face{
+.front-face {
   display: none;
 }
