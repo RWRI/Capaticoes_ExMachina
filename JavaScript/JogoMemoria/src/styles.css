@@ -7,4 +7,52 @@
 body {
   height: 100vh;
   background: #060AB2;
+  display: flex;
+}
+
+.about{
+  background-color: #fff;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.about h2{
+  color: #478ece;
+  font-size: 3em;
+  text-align: center;
+}
+
+.about img{
+  padding: 1em;
+  width: 90%;
+}
+
+.about p{
+  color: #8f8f8f;
+  font-style: italic;
+}
+
+.memory-game{
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 4em 1.5em;
+  
+}
+
+.memory-card{
+  width: 20%;
+  background-color: #478ece;
+  margin: 0.5em;
+  padding: 0.5em;
+  display: flex;
+  justify-content: center;
+}
+
+.front-face{
+  display: none;
 }
