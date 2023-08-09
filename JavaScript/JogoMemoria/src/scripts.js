@@ -2,16 +2,14 @@ const cards = document.querySelectorAll(".memory-card");
 
 const virar = function () {
     const front = this.querySelector(".front-face");
-    if (front.style.display === "") {
-        front.style.display = "flex";
-        const back = this.querySelector(".back-face");
-        back.style.display = "none";
+    const back = this.querySelector(".back-face");
+    if (front.style.display === "flex") {        
+        front.style.display = "none";
+        back.style.display = "flex";
     }
     else {
-        const front = this.querySelector(".front-face");
-        front.style.display = "none";
-        const back = this.querySelector(".back-face");
-        back.style.display = "flex";
+        front.style.display = "flex";
+        back.style.display = "none";
     }
 }
 
