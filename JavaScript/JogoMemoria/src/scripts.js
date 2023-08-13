@@ -51,4 +51,14 @@ const shuffleCards = function () {
     }
 };
 
-shuffleCards();
+
+const jogar = function(){
+    const jogo = document.querySelector(".memory-game");
+    jogo.style.display = "flex";
+    const inicio = document.querySelector(".inicio");
+    inicio.style.display = "none";
+    shuffleCards();
+}
+
+const botao = document.getElementById("botao");
+botao.addEventListener("click",jogar);
