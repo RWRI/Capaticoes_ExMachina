@@ -58,6 +58,10 @@ body {
   max-height: 5.5em;
 }
 
+.back-face {
+  display: flex;
+}
+
 .front-face {
   display: none;
 }

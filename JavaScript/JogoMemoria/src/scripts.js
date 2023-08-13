@@ -1,15 +1,34 @@
 const cards = document.querySelectorAll(".memory-card");
+let parEscolhido = [null, null];
 
-const virar = function () {
-    const front = this.querySelector(".front-face");
-    const back = this.querySelector(".back-face");
-    if (front.style.display === "flex") {        
+const desvirar = function(){
+    parEscolhido.forEach( card => {
+        const front = card.querySelector(".front-face");
+        const back = card.querySelector(".back-face");
         front.style.display = "none";
         back.style.display = "flex";
-    }
-    else {
+    });
+    parEscolhido = [null, null];
+}
+
+function checkPar(){
+    setTimeout(desvirar,2000);
+}
+
+const virar = function () {
+    if(parEscolhido[1]) return;
+    const front = this.querySelector(".front-face");
+    const back = this.querySelector(".back-face");
+    if (back.style.display === "" || back.style.display === "flex") { 
         front.style.display = "flex";
         back.style.display = "none";
+        
+        if(!parEscolhido[0]){
+            parEscolhido[0] = this;
+        }else if(!parEscolhido[1]){
+            parEscolhido[1] = this;
+            checkPar();
+        }
     }
 }
 
