@@ -12,7 +12,13 @@ const desvirar = function(){
 }
 
 function checkPar(){
-    setTimeout(desvirar,2000);
+    const card1 = parEscolhido[0].querySelector(".front-face").alt;
+    const card2 = parEscolhido[1].querySelector(".front-face").alt;
+    if(card1 === card2){
+        parEscolhido = [null, null];
+    }else{
+        setTimeout(desvirar,2000);
+    }
 }
 
 const virar = function () {
@@ -22,7 +28,7 @@ const virar = function () {
     if (back.style.display === "" || back.style.display === "flex") { 
         front.style.display = "flex";
         back.style.display = "none";
-        
+
         if(!parEscolhido[0]){
             parEscolhido[0] = this;
         }else if(!parEscolhido[1]){
