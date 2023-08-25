@@ -2,12 +2,12 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Comfortaa', cursive;
+  font-family: "Comfortaa", cursive;
 }
 
 body {
   height: 100vh;
-  background: #060AB2;
+  background: #060ab2;
   display: flex;
 }
 
@@ -43,6 +43,7 @@ body {
   flex-wrap: wrap;
   padding: 3em 1.5em 3em 1.5em;
   display: none;
+  perspective: 1000px;
 }
 
 .memory-card {
@@ -51,19 +52,28 @@ body {
   margin: 0.5em;
   display: flex;
   justify-content: center;
-}
-
-.memory-card img {
-  margin: auto;
-  max-height: 5.5em;
+  align-items: center;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
 }
 
 .back-face {
-  display: flex;
+  position: absolute;
+  backface-visibility: hidden;
+  width: 80%;
+  height: 80%;
 }
 
 .front-face {
-  display: none;
+  position: absolute;
+  backface-visibility: hidden;
+  width: 80%;
+  height: 80%;
+  transform: rotateY(180deg);
+}
+
+.memory-card.flip {
+  transform: rotateY(180deg);
 }
 
 .inicio {
@@ -74,7 +84,7 @@ body {
   justify-content: center;
 }
 
-.inicio h1{
+.inicio h1 {
   font-size: 4em;
   font-weight: bolder;
   text-align: center;
