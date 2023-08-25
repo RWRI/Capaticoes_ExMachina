@@ -5,10 +5,7 @@ let encontrados = 0;
 
 const desvirar = function () {
     parEscolhido.forEach(card => {
-        const front = card.querySelector(".front-face");
-        const back = card.querySelector(".back-face");
-        front.style.display = "none";
-        back.style.display = "flex";
+        card.classList.remove('flip')
     });
     parEscolhido = [null, null];
 }
@@ -28,18 +25,13 @@ function checkPar() {
 
 const virar = function () {
     if (parEscolhido[1]) return;
-    const front = this.querySelector(".front-face");
-    const back = this.querySelector(".back-face");
-    if (back.style.display === "" || back.style.display === "flex") {
-        front.style.display = "flex";
-        back.style.display = "none";
 
-        if (!parEscolhido[0]) {
-            parEscolhido[0] = this;
-        } else if (!parEscolhido[1]) {
-            parEscolhido[1] = this;
-            checkPar();
-        }
+    this.classList.add('flip')
+    if (!parEscolhido[0]) {
+        parEscolhido[0] = this;
+    } else if (!parEscolhido[1]) {
+        parEscolhido[1] = this;
+        checkPar();
     }
 }
 
@@ -75,9 +67,6 @@ function jogarNovamente(){
     document.querySelector("#mensagemVitoria").style.display = "inline";
     document.querySelector("#botao").textContent = "Jogar Novamente";
     cards.forEach(card => {
-        const front = card.querySelector(".front-face");
-        const back = card.querySelector(".back-face");
-        front.style.display = "none";
-        back.style.display = "flex";
+        card.classList.remove('flip')
     });
 }
