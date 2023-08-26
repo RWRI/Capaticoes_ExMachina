@@ -5,7 +5,7 @@ let encontrados = 0;
 
 const desvirar = function () {
     parEscolhido.forEach(card => {
-        card.classList.remove('flip')
+        card.classList.remove('flip');
     });
     parEscolhido = [null, null];
 }
@@ -15,9 +15,8 @@ function checkPar() {
     const card2 = parEscolhido[1].querySelector(".front-face").alt;
     if (card1 === card2) {
         encontrados++;
-        console.log(encontrados);
         parEscolhido = [null, null];
-        if(encontrados === 6) setTimeout(jogarNovamente,3000);
+        if (encontrados === 6) setTimeout(jogarNovamente, 3000);
     } else {
         setTimeout(desvirar, 2000);
     }
@@ -25,8 +24,9 @@ function checkPar() {
 
 const virar = function () {
     if (parEscolhido[1]) return;
+    if (this.classList[1]) return;
 
-    this.classList.add('flip')
+    this.classList.add('flip');
     if (!parEscolhido[0]) {
         parEscolhido[0] = this;
     } else if (!parEscolhido[1]) {
@@ -47,7 +47,7 @@ const shuffleCards = function () {
     }
 };
 
-const jogar = function(){
+const jogar = function () {
     const jogo = document.querySelector(".memory-game");
     jogo.style.display = "flex";
     const inicio = document.querySelector(".inicio");
@@ -56,9 +56,9 @@ const jogar = function(){
 }
 
 const botao = document.getElementById("botao");
-botao.addEventListener("click",jogar);
+botao.addEventListener("click", jogar);
 
-function jogarNovamente(){
+function jogarNovamente() {
     encontrados = 0;
     const jogo = document.querySelector(".memory-game");
     jogo.style.display = "none";
@@ -67,6 +67,6 @@ function jogarNovamente(){
     document.querySelector("#mensagemVitoria").style.display = "inline";
     document.querySelector("#botao").textContent = "Jogar Novamente";
     cards.forEach(card => {
-        card.classList.remove('flip')
+        card.classList.remove('flip');
     });
 }
